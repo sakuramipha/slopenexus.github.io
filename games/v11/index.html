@@ -15,8 +15,7 @@
       }
 
       // Call resizeCanvas on window resize and initially
-      window.addEventListener("resize", resizeCanvas);
-      window.addEventListener("load", resizeCanvas);
+
 
       // Prevent blacklisted URL requests
       XMLHttpRequest.prototype.open = new Proxy(XMLHttpRequest.prototype.open, {

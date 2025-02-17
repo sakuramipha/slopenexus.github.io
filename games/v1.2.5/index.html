@@ -4,13 +4,6 @@
     <script>
       //custom ad implementation (no ads)
       window.showNextAd = () => {}
-      //make fullscreen
-      setInterval(() => {
-        let canvas = document.getElementById("unity-canvas")
-        if (!canvas) return
-        canvas.style.width = "100%"
-        canvas.style.height = "100%"
-      }, 100)
     </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -35,7 +28,7 @@
   </script></head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -86,7 +79,7 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
+        canvas.style.width = "850px";
         canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";

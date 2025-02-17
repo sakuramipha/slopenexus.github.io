@@ -6,18 +6,7 @@
 }
 
 /* Make the WebGL content fill the entire window */
-.webgl-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: #222; /* Optional: background color */
-}
+.webgl-content {padding: 0; margin: auto; display: block; width: 850px; height: 600px; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
 
 /* Ensure the canvas or game element takes the full size of the container */
 .webgl-content canvas {

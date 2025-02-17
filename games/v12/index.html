@@ -5,15 +5,6 @@
       // Custom script to handle resizing and prevent console spam
       console.warn = () => {};
 
-      // Automatically resize the canvas to match the window size
-      function resizeCanvas() {
-        const canvas = document.getElementById("canvas");
-        if (canvas) {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-        }
-      }
-
       // Call resizeCanvas on window resize and initially
       window.addEventListener("resize", resizeCanvas);
       window.addEventListener("load", resizeCanvas);

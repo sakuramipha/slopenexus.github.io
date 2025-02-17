@@ -5,7 +5,7 @@
 } 
 
 
-.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content * {padding: 0; margin: auto; display: block; width: 850px; height: 600px; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
 
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}

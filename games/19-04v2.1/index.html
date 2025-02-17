@@ -15,13 +15,6 @@
           return Reflect.apply(target, thisArgument, argumentsList)
         }
       })
-      //resize canvas to fullscreen
-      setInterval(() => {
-        let canvas = document.getElementById("#canvas")
-        if (!canvas) return
-        if (canvas.width !== window.innerWidth) canvas.width = window.innerWidth
-        if (canvas.height !== window.innerHeight) canvas.height = window.innerHeight
-      }, 100)
     </script>
     <script src="UnityProgress.js"></script>
     <style>

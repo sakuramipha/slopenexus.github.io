@@ -18,28 +18,10 @@
                 Module: {
                     onRuntimeInitialized: function () {
                         UnityProgress(gameInstance, "complete");
-                        resizeGame(); // Call resize after the game is initialized
                     }
                 }
             });
         }
-
-        // Adjust the game container size dynamically
-        function resizeGame() {
-            var width = window.innerWidth;
-            var height = window.innerHeight;
-            
-            var gameContainer = document.getElementById("gameContainer");
-            
-            // Set game container size, considering the footer height
-            gameContainer.style.width = width + "px";
-            
-        }
-
-        // Call resizeGame on window resize
-        window.onresize = resizeGame;
-
-        // Initial resize
         window.onload = initializeGame; // Initialize game when page loads
     </script>
 </head>
